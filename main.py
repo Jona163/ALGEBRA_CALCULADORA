@@ -203,3 +203,6 @@ while repetir:
         plt.show()
         rep=input("¿Desea realizar otra operacion? [Si/No]")
         if rep == "s" or rep == "S":
+               repetir = True
+        else:
+                repetir=False
