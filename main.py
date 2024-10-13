@@ -169,3 +169,17 @@ while repetir:
         plt.show()
         x = [rReal]
         y = [rImag]
+        plt.scatter(x,y)
+        plt.ylabel('Imaginario')
+        plt.xlabel('Real')
+        plt.title("Gráfica cartesiana",  fontsize=15, color="r", name="Times New Roman")
+        plt.show()
+        rep=input("¿Desea realizar otra operacion? [Si/No]")
+        if rep == "si" or rep == "Si":
+                repetir = True
+        else:
+                repetir=False
+    elif case == 6:
+        a =int(input("Ingresa la potencia a elevar a i "))
+
+        print("Numero ingresado",  "i",  "^", str(a,))
