@@ -183,3 +183,16 @@ while repetir:
         a =int(input("Ingresa la potencia a elevar a i "))
 
         print("Numero ingresado",  "i",  "^", str(a,))
+
+        b = a%4
+
+        if b == 0:
+            print("El resultado es 1")
+        elif b == 1:
+            print("El resultado es i")
+        elif b == 2:
+            print("El resultado es -1")
+        elif b == 3:
+            print("El resultado es -i")
+        x = [b]
+        y = 0
