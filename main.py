@@ -59,3 +59,5 @@ while repetir:
         rep=input("¿Desea realizar otra operacion? [Si/No]")
         if rep == "si" or rep == "Si":
                 repetir = True
+       else:
+                repetir=False
