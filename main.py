@@ -103,3 +103,14 @@ while repetir:
         print("El resultado es", z)
         x = [n]
         y = [m]
+
+        plt.scatter(x,y)
+        plt.ylabel('Imaginario')
+        plt.xlabel('Real')
+        plt.title("Gráfica cartesiana",  fontsize=15, color="r", name="Times New Roman")
+        plt.show()
+        rep=input("¿Desea realizar otra operacion? [Si/No]")
+        if rep == "si" or rep == "Si":
+                repetir = True
+        else:
+                repetir=False
