@@ -124,3 +124,12 @@ while repetir:
         d=int(input("Digite la parte imaginaria del segundo numero complejo "))
         z = complex(c,d)
         print("Numero ingresado: ",(z))
+        modulo2 = c*c + d*d
+        n = (a*c) + (b*d)
+        real = n / modulo2
+        m = (b*c) - (a*d)
+        imag = m / modulo2
+        z = complex(real,imag)
+        print("El resultado es", z)
+        x = [real]
+        y = [imag]
