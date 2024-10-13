@@ -241,3 +241,7 @@ while repetir:
                 plt.xlabel('Real')
                 plt.title("Gráfica cartesiana",  fontsize=15, color="r", name="Times New Roman")
                 plt.show()
+
+        rep=input("¿Desea realizar otra operacion? [Si/No]")
+        if rep == "si" or rep == "Si":
+                repetir = True
