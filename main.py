@@ -87,3 +87,19 @@ while repetir:
                 repetir = True
         else:
                 repetir=False
+
+    elif case == 3:
+        a=int(input("Digite la parte real del primer numero complejo "))
+        b=int(input("Digite la parte imaginaria del primer numero complejo "))
+        z = complex(a,b)
+        print("Numero ingresado: ",(z))
+        c=int(input("Digite la parte real del segundo numero complejo "))
+        d=int(input("Digite la parte imaginaria del segundo numero complejo "))
+        z = complex(c,d)
+        print("Nunero ingresado: ",(z))
+        n = (a*c) - (b*d)
+        m = (b*c) + (a*d)
+        z = complex (n,m)
+        print("El resultado es", z)
+        x = [n]
+        y = [m]
