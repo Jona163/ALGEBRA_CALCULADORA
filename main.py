@@ -216,3 +216,14 @@ while repetir:
         h = math.degrees(x)
         raiz= s**(1/float(c))
         contador = 0
+        while contador < c:
+                rRaiz = contador * 360
+                f= rRaiz + h
+                z1 = f/c
+                rad = z1 * math.pi/180
+                rads = z1 * math.pi / 180
+                cos = math.cos(rad)
+                sen = math.sin(rads)
+                rReal = cos * raiz
+                rImag = sen * raiz
+                z = complex(rReal,rImag)
