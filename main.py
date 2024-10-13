@@ -19,3 +19,11 @@ def menu():
     print("5. POTENCIAS A LA N")
     print("6. POTENCIAS DE I")
     print("7. RAICES DE NUMEROS COMPLEJOS")
+
+def switch(case, q, w, e, r):
+    sw={
+    }
+    return sw.get(case,default())
+
+def default():
+    return "La opcion %s no existe en el menu"% case
