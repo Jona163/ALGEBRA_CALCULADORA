@@ -227,3 +227,17 @@ while repetir:
                 rReal = cos * raiz
                 rImag = sen * raiz
                 z = complex(rReal,rImag)
+                print("Forma Polar: ", "MAGNITUD: ", raiz, "ANGULO:",z1)
+                print("El resultado es: ", z)
+                contador = contador + 1
+                raiz, z1=cmath.polar(z)
+                plt.polar([0,z1],[0,raiz],marker='o')
+                plt.title("Grafico polar",  fontsize=15, color="r", name="Times New Roman")
+                plt.show()
+                x = [rReal]
+                y = [rImag]
+                plt.scatter(x,y)
+                plt.ylabel('Imaginario')
+                plt.xlabel('Real')
+                plt.title("Gráfica cartesiana",  fontsize=15, color="r", name="Times New Roman")
+                plt.show()
