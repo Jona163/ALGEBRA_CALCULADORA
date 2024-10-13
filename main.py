@@ -9,3 +9,13 @@ import tkinter as tk
 import cmath
 import math 
 import numpy as np
+
+def menu():
+    print("----------MENU----------")
+    print("1. SUMA")
+    print("2. RESTA")
+    print("3. MULTIPLICACION")
+    print("4. DIVISION")
+    print("5. POTENCIAS A LA N")
+    print("6. POTENCIAS DE I")
+    print("7. RAICES DE NUMEROS COMPLEJOS")
