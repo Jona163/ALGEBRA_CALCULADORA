@@ -206,3 +206,13 @@ while repetir:
                repetir = True
         else:
                 repetir=False
+   elif case == 7:
+        a=int(input("Digite la parte real del numero complejo "))
+        b=int(input("Digite la parte imaginaria del numero complejo "))
+        c= int(input("Ingresa la raiz "))
+        s = math.sqrt(a** 2 + b** 2)
+        angulo = (b/a)
+        x = math.atan(angulo)
+        h = math.degrees(x)
+        raiz= s**(1/float(c))
+        contador = 0
