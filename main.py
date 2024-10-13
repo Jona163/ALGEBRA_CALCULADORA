@@ -196,3 +196,10 @@ while repetir:
             print("El resultado es -i")
         x = [b]
         y = 0
+        plt.scatter(x,y)
+        plt.ylabel('Imaginario')
+        plt.xlabel('Real')
+        plt.title("Gráfica cartesiana",  fontsize=15, color="r", name="Times New Roman")
+        plt.show()
+        rep=input("¿Desea realizar otra operacion? [Si/No]")
+        if rep == "s" or rep == "S":
