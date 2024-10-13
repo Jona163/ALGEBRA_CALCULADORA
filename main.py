@@ -156,3 +156,16 @@ while repetir:
         anguloMultiplicado = h * c
         rad = anguloMultiplicado * math.pi/180
         rads = anguloMultiplicado * math.pi/180
+        cos = math.cos(rad)
+        sen = math.sin(rads)
+        rReal = cos * rPotencia
+        rImag = sen * rPotencia
+        z = complex(rReal,rImag)
+        print("Forma Polar: ", "MAGNITUD: ", rPotencia, "ANGULO:",anguloMultiplicado)
+        print("El resultado es", z)
+        rPotencia, anguloMultiplicado =cmath.polar(z)
+        plt.polar([0,anguloMultiplicado],[0,rPotencia],marker='o')
+        plt.title("Grafico polar",  fontsize=15, color="r", name="Times New Roman")
+        plt.show()
+        x = [rReal]
+        y = [rImag]
