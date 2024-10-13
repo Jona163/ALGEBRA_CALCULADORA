@@ -143,3 +143,16 @@ while repetir:
                 repetir = True
         else:
                 repetir=False
+    elif case == 5:
+        a=int(input("Digite la parte real del numero complejo "))
+        b=int(input("Digite la parte imaginaria del numero complejo "))
+        c= int(input("Ingresa la potencia "))
+        z = complex(a,b)
+        print("Numero ingresado: ", z, "^", c )
+        s = math.sqrt(a** 2 + b** 2)
+        angulo = math.atan(b/a)
+        h = math.degrees(angulo)
+        rPotencia = s ** c
+        anguloMultiplicado = h * c
+        rad = anguloMultiplicado * math.pi/180
+        rads = anguloMultiplicado * math.pi/180
